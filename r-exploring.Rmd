@@ -1,0 +1,26 @@
+---
+title: "eds212-day4-activities"
+output: html_document
+date: "2022-08-04"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(skimr)
+library(GGally)
+```
+
+## R-exploring
+
+```{r}
+names(diamonds)
+dim(diamonds)
+head(diamonds)
+tail(diamonds)
+skimr::skim(diamonds)
+```
+
+```{r}
+ggpairs()
+```
